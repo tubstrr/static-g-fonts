@@ -1,0 +1,10 @@
+:root {
+	--font-headline: "Nunito", "Nunito override", sans-serif;
+	--font-copy: "Montserrat", "Montserrat override", sans-serif;
+}
+body {
+	font-family: var(--font-copy);
+}
+* {
+	font-family: inherit;
+}

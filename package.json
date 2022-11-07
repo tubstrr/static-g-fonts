@@ -1,11 +1,19 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
-  },
-  "devDependencies": {
-    "nuxt3": "latest"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "nuxi dev",
+		"build": "nuxi build",
+		"start": "node .output/server/index.mjs"
+	},
+	"devDependencies": {
+		"@nuxtjs/fontaine": "^0.2.2",
+		"nuxt": "3.0.0-rc.13"
+	},
+	"dependencies": {
+		"adm-zip": "^0.5.9",
+		"download": "^8.0.0",
+		"node-fetch": "^3.2.10",
+		"sass": "^1.55.0",
+		"vue3-lazy-hydration": "^1.2.1"
+	}
 }
