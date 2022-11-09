@@ -1,10 +1,48 @@
 :root {
-	--font-headline: "Nunito", "Nunito override", sans-serif;
-	--font-copy: "Montserrat", "Montserrat override", sans-serif;
+	--font-headline: "Montserrat", "Montserrat override", sans-serif;
+	--font-copy: "Nunito", "Nunito override", sans-serif;
+
+	--gray: #e5e5e5;
+	--white: #fff;
+	--black: #1a2330;
+
+	--blue: #3d6fb1;
+	--light-blue: #8bb5cb;
+	--pink: #cb8bb3;
 }
-body {
-	font-family: var(--font-copy);
-}
-* {
-	font-family: inherit;
+html {
+	word-spacing: 1px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+
+	body {
+		font-family: var(--font-copy);
+		background: var(--gray);
+
+		overflow: hidden;
+
+		* {
+			font-family: inherit;
+			line-height: 1.4;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: var(--font-headline);
+		}
+
+		h1 {
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+	}
 }
