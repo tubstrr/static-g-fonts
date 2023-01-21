@@ -26,10 +26,10 @@ export const pushStyles = (font, fontName, CSS, SCSS) => {
 		"unicode-range": unicodeRange
 	};
 
-	fontFaceOBJ.src = `local("${fontFamily}") url('./fonts/${fontName}') format('${format}')`;
+	fontFaceOBJ.src = `url('./fonts/${fontName}') format('${format}')`;
 	CSS.push(`@font-face {${dumpObject(fontFaceOBJ)}}`);
 
-	fontFaceOBJ.src = `local("${fontFamily}") url($static-g-fonts-path + '${fontName}') format('${format}')`;
+	fontFaceOBJ.src = `url($static-g-fonts-path + '${fontName}') format('${format}')`;
 	SCSS.push(`@font-face {${dumpObject(fontFaceOBJ)}}`);
 };
 
